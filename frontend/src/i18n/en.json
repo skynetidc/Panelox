@@ -1,0 +1,72 @@
+{
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "create": "Create",
+    "edit": "Edit",
+    "search": "Search...",
+    "loading": "Loading...",
+    "confirm": "Confirm",
+    "back": "Back",
+    "actions": "Actions",
+    "status": "Status",
+    "name": "Name",
+    "active": "Active",
+    "inactive": "Inactive"
+  },
+  "auth": {
+    "login": "Sign In",
+    "logout": "Sign Out",
+    "email": "Email",
+    "password": "Password",
+    "fullName": "Full Name",
+    "register": "Create Account",
+    "welcomeBack": "Welcome back",
+    "signInToContinue": "Sign in to your Panelox account"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "monitoring": "Monitoring",
+    "websites": "Websites",
+    "ssl": "SSL Certificates",
+    "dns": "DNS Zones",
+    "mail": "Mail",
+    "databases": "Databases",
+    "firewall": "Firewall",
+    "files": "File Manager",
+    "containers": "Docker",
+    "terminal": "Terminal",
+    "settings": "Settings",
+    "users": "Users",
+    "appStore": "App Store",
+    "gitDeploy": "Git Deploy",
+    "cronJobs": "Cron Jobs",
+    "backups": "Backups",
+    "phpRuntimes": "PHP Runtimes",
+    "security": "Security",
+    "billing": "Billing",
+    "apiKeys": "API Keys",
+    "nodes": "Server Nodes"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "overview": "Overview",
+    "systemStats": "System Stats",
+    "websites": "Websites",
+    "databases": "Databases",
+    "mailDomains": "Mail Domains",
+    "dnsZones": "DNS Zones",
+    "sslCerts": "SSL Certificates",
+    "firewallRules": "Firewall Rules",
+    "users": "Users"
+  },
+  "websites": {
+    "title": "Websites",
+    "create": "Create Website",
+    "domain": "Domain",
+    "type": "Type",
+    "ssl": "SSL",
+    "noWebsites": "No websites yet"
+  }
+}

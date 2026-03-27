@@ -1,0 +1,45 @@
+services:
+  backend:
+    build:
+      context: ..
+      dockerfile: docker/backend.Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      PANELOX_PORT: 8080
+      PANELOX_DATABASE_URL: postgres://panelox:${DB_PASSWORD}@postgres:5432/panelox?sslmode=disable
+      PANELOX_JWT_SECRET: ${JWT_SECRET}
+      PANELOX_ENCRYPTION_KEY: ${ENCRYPTION_KEY}
+      PANELOX_CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost}
+      PANELOX_LOG_LEVEL: info
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: unless-stopped
+
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: panelox
+      POSTGRES_USER: panelox
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U panelox"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+volumes:
+  pgdata:

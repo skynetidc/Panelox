@@ -1,0 +1,72 @@
+{
+  "common": {
+    "save": "Uložit",
+    "cancel": "Zrušit",
+    "delete": "Smazat",
+    "create": "Vytvořit",
+    "edit": "Upravit",
+    "search": "Hledat...",
+    "loading": "Načítání...",
+    "confirm": "Potvrdit",
+    "back": "Zpět",
+    "actions": "Akce",
+    "status": "Stav",
+    "name": "Název",
+    "active": "Aktivní",
+    "inactive": "Neaktivní"
+  },
+  "auth": {
+    "login": "Přihlásit se",
+    "logout": "Odhlásit se",
+    "email": "E-mail",
+    "password": "Heslo",
+    "fullName": "Celé jméno",
+    "register": "Vytvořit účet",
+    "welcomeBack": "Vítejte zpět",
+    "signInToContinue": "Přihlaste se do Panelox"
+  },
+  "nav": {
+    "dashboard": "Přehled",
+    "monitoring": "Monitoring",
+    "websites": "Weby",
+    "ssl": "SSL Certifikáty",
+    "dns": "DNS Zóny",
+    "mail": "Pošta",
+    "databases": "Databáze",
+    "firewall": "Firewall",
+    "files": "Správce souborů",
+    "containers": "Docker",
+    "terminal": "Terminál",
+    "settings": "Nastavení",
+    "users": "Uživatelé",
+    "appStore": "Obchod s aplikacemi",
+    "gitDeploy": "Git Deploy",
+    "cronJobs": "Plánované úlohy",
+    "backups": "Zálohy",
+    "phpRuntimes": "PHP Runtime",
+    "security": "Zabezpečení",
+    "billing": "Fakturace",
+    "apiKeys": "API Klíče",
+    "nodes": "Serverové uzly"
+  },
+  "dashboard": {
+    "title": "Přehled",
+    "overview": "Přehled",
+    "systemStats": "Systémové statistiky",
+    "websites": "Weby",
+    "databases": "Databáze",
+    "mailDomains": "Mailové domény",
+    "dnsZones": "DNS Zóny",
+    "sslCerts": "SSL Certifikáty",
+    "firewallRules": "Pravidla firewallu",
+    "users": "Uživatelé"
+  },
+  "websites": {
+    "title": "Weby",
+    "create": "Vytvořit web",
+    "domain": "Doména",
+    "type": "Typ",
+    "ssl": "SSL",
+    "noWebsites": "Zatím žádné weby"
+  }
+}
