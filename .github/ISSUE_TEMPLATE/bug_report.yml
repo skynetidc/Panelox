@@ -1,0 +1,105 @@
+name: Bug Report
+description: Report a bug or unexpected behavior
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug! Please fill out the information below.
+
+  - type: input
+    id: version
+    attributes:
+      label: Panelox Version
+      description: "Run `panelox --version` or check Settings > License"
+      placeholder: "v1.0.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating System
+      options:
+        - Ubuntu 22.04
+        - Ubuntu 24.04
+        - Debian 11
+        - Debian 12
+        - CentOS 9
+        - Rocky Linux 9
+        - AlmaLinux 9
+        - Fedora 39+
+        - Other (specify below)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: module
+    attributes:
+      label: Affected Module
+      options:
+        - Dashboard
+        - Websites
+        - SSL/TLS
+        - DNS
+        - Mail
+        - Databases
+        - Firewall
+        - File Manager
+        - Terminal
+        - Docker/Containers
+        - App Store
+        - Cron Jobs
+        - Backups
+        - Monitoring
+        - Analytics
+        - Git Deploy
+        - Security (2FA, Fail2Ban, Login Log)
+        - Settings
+        - Users / RBAC
+        - Nodes (Multi-server)
+        - API / Webhooks
+        - Installation
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: What happened? What did you expect to happen?
+      placeholder: "When I try to create a new website, the panel returns a 500 error..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce this?
+      placeholder: |
+        1. Go to Websites
+        2. Click "Create Website"
+        3. Fill in the domain
+        4. Click Save
+        5. Error appears
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / Error Output
+      description: "Paste relevant logs from `journalctl -u panelox` or browser console"
+      render: shell
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots
+    validations:
+      required: false
